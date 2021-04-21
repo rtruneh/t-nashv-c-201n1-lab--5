@@ -26,7 +26,7 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
-    let theProduct = a + b;
+    let theProduct = a * b;
     let message = 'The product of ' + a + ' and ' + b + ' is ' + theProduct
     return [theProduct, message]
 }
