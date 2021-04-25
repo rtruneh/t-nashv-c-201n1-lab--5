@@ -49,9 +49,7 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-    let sum2 = sum(a, b)[0];
     let sum3 = sum(a+b, c)[0];
-    let product2 = multiply(a, b)[0];
     let product3 = multiply(a+b, c)[0];
     let message1 = a + ' and ' + b + ' and ' + c  + ' sum to ' + sum3
     let message2 = 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + product3
@@ -75,13 +73,16 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 let testArray = [2, 3, 4]; //eslint-disable-line
 
-function sumArray(sumArr) { //eslint-disable-line
+function sumArray([a,b,c]) { //eslint-disable-line
+    let sum4 = sum(a+b, c)[0];
+   let message4 = testArray +  ' was passed in as an array of numbers, and ' + sum4 + ' is their sum.'
 
+    return [sum4, message4]
 }
-
 // Here is the test for sumArray(); uncomment it to run it
 
-// testSumArray(testArray);
+console.log(sumArray(testArray));
+
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
